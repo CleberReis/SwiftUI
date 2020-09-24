@@ -99,9 +99,9 @@
 		BF35CD46251D39DA00FE4530 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				03833C5423E8544B003DEF66 /* ContentView.swift */,
 				BF35CD47251D3A0700FE4530 /* HeaderView.swift */,
 				BF35CD4B251D3AF600FE4530 /* CelulaViagemView.swift */,
-				03833C5423E8544B003DEF66 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
