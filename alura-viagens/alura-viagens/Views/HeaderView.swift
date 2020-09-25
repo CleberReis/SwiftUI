@@ -22,7 +22,7 @@ struct HeaderView: View {
                     Text("alura viagens")
                         .foregroundColor(.white)
                         .font(.custom("Avenir Black", size: self.horizontalSizeClass == .compact ? 20 : 30))
-                        .padding(.top, 50)
+                        .padding(.top, self.horizontalSizeClass == .compact ? 50 : 90)
                     Text("Especial".uppercased())
                         .foregroundColor(.white)
                         .font(.custom("Avenir Book", size: self.horizontalSizeClass == .compact ? 20: 30))
@@ -43,7 +43,7 @@ struct HeaderView: View {
                             .font(.custom("Avenir Medium", size: self.horizontalSizeClass == .compact ? 17: 24))
                             .foregroundColor(.white)
                     }
-                    .frame(width: 100, height: 50)
+                    .frame(width: self.horizontalSizeClass == .compact ? 100 : 150, height: self.horizontalSizeClass == .compact ? 50 : 75)
                     .background(Color.blue)
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 10))
                     .offset(x: self.horizontalSizeClass == .compact ? 50: view.size.width/4)
@@ -55,12 +55,12 @@ struct HeaderView: View {
                             .font(.custom("Avenir Medium", size: self.horizontalSizeClass == .compact ? 17: 24))
                             .foregroundColor(.white)
                     }
-                    .frame(width: 100, height: 50)
+                    .frame(width: self.horizontalSizeClass == .compact ? 100 : 150, height: self.horizontalSizeClass == .compact ? 50 : 75)
                     .background(Color.orange)
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.orange, lineWidth: 10))
                     .offset(x: self.horizontalSizeClass == .compact ? -50: -view.size.width/4)
                 }
-                .offset(y: -25)
+                .offset(y: self.horizontalSizeClass == .compact ? -25 : -37.5)
             }
         }
     }
